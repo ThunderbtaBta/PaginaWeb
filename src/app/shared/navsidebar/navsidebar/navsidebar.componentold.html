@@ -1,0 +1,69 @@
+<div class="sidebar flex flex-col w-20 h-full box py-36" [ngClass]="collapsed ? 'navsidebar-collapse w-64':''">
+    <div class="container w-screen h-screen p-4 font-montserrat text-2xl">
+        <div id="sidebar" class="sidebar bg-slate-200 min-h-screen z-10 w-64 fixed left-0 h-screen p-3">
+            <button (click)="toogleCollapse()">A
+                <div class="">
+                    <i class="">
+                        <img src="../assets/img/menu/home.svg" alt="Inicio" class="w-7 cursor-pointer items-center"
+                            (click)="closeNavSidebar()">
+                        <span *ngIf="collapsed">Home </span>
+                    </i>
+                    <a href="#"
+                        class=" space-x-5 items-center py-3 hover:bg-[#00C83C]  hover:text-white rounded-lg transition ease-linear duration-150">
+                        <i>
+                            <img src="../assets/img/menu/home.svg" alt="Inicio" class="w-7 cursor-pointer items-center">
+                        </i>
+                        <div class="flex flex-col">
+                            <span *ngIf="collapsed">Inicio</span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="space-x-5 items-center py-3  hover:bg-[#00C83C]  hover:text-white rounded-lg  transition ease-linear duration-150">
+                        <i>
+                            <img src="../assets/img/menu/hoja1.svg" alt="" class="w-7 cursor-pointer items-center">
+                        </i>
+                        <div class="flex flex-col">
+                            <span *ngIf="collapsed">Contratos</span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="space-x-5 items-center py-3 hover:bg-[#00C83C]   hover:text-white rounded-lg  transition ease-linear duration-150">
+                        <i>
+                            <img src="../assets/img/menu/star.svg" alt="" class="w-7 cursor-pointer items-center">
+                        </i>
+                        <div class="flex flex-col">
+                            <span *ngIf="collapsed">Acciones</span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="space-x-2 items-center py-3 hover:bg-[#59f387]  hover:text-black rounded-lg  transition ease-linear duration-150">
+                        <i>
+                            <img src="../assets/img/menu/money.svg" alt="" class="w-7 cursor-pointer items-center">
+                        </i>
+                        <div class="flex flex-col">
+                            <span *ngIf="collapsed">Objetivos</span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="space-x-5 items-center py-3 hover:bg-[#00C83C]  hover:text-white rounded-lg transition ease-linear duration-150">
+                        <i>
+                            <img src="../assets/img/menu/Tool.svg" alt="" class="w-7 cursor-pointer items-center">
+                        </i>
+                        <div class="flex flex-col">
+                            <span *ngIf="collapsed">Herramientas</span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="space-x-5 items-center py-3 hover:bg-[#00C83C]  hover:text-white rounded-lg transition ease-linear duration-150">
+                        <i>
+                            <img src="../assets/img/menu/talk2.svg" alt="" class="w-7 cursor-pointer items-center">
+                        </i>
+                        <div class="flex flex-col">
+                            <span *ngIf="collapsed">Servicio al Cliente</span>
+                        </div>
+                    </a>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>

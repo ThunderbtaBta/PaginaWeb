@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-custom{
+    @apply  bg-slate-300  hover:bg-slate-200 rounded-3xl font-montserrat font-bold
+    bottom-5 items-center py-3 px-3 mt-auto
+}
+.fa-times{
+    @apply bg-slate-200 text-2xl
+}
+.sidenav-collapsed {
+    @apply w-64
+}
+.img-custom{
+    @apply w-full px-2 inline-flex space-x-5 items-center border-b-2 py-3 hover:bg-[#00C83C]  hover:text-white rounded-lg transition ease-linear duration-150
+}
+.text-footer{
+    @apply text-[#00C83C] font-bold
+}

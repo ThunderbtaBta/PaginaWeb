@@ -1,0 +1,66 @@
+<div class="sidenav bg-slate-200 transition-all w-16 fixed rounded-md mt-28 "
+    [ngClass]="collapsed ? 'sidenav-collapsed':''">
+    <div class="logo-container flex items-center p-4 w-full ">
+        <button class="logo bg-slate-100 text-center w-12 rounded-lg p-2 cursor-pointer "
+            (click)="toogleCollapse()" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="w-6 h-6 items-center">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+              </svg>
+        </button>
+        <button class="btn-close ml-auto cursor-pointer w-8 h-8 rounded-sm bg-transparent" *ngIf="collapsed"
+            (click)="closeNavSidebar()">
+        </button>
+    </div>
+    <div>
+        <a href="#" class="img-custom">
+            <i (click)="toogleCollapse()">
+                <img src="../assets/img/menu/home.svg" alt="Inicio" class="w-7 cursor-pointer items-center">
+            </i>
+            <div class="flex flex-col">
+                <span *ngIf="collapsed">Inicio</span>
+            </div>
+        </a>
+        <a href="#" class="img-custom">
+            <i (click)="toogleCollapse()">
+                <img src="../assets/img/menu/hoja1.svg" alt="" class="w-7 cursor-pointer items-center">
+            </i>
+            <div class="flex flex-col">
+                <span *ngIf="collapsed">Contratos</span>
+            </div>
+        </a>
+        
+        <a href="#" class="img-custom">
+            <i (click)="toogleCollapse()">
+                <img src="../assets/img/menu/star.svg" alt="" class="w-7 cursor-pointer items-center">
+            </i>
+            <div class="flex flex-col">
+                <span *ngIf="collapsed">Acciones</span>
+            </div>
+        </a>
+        <a href="#" class="img-custom">
+            <i (click)="toogleCollapse()">
+                <img src="../assets/img/menu/money.svg" alt="" class="w-7 cursor-pointer items-center">
+            </i>
+            <div class="flex flex-col">
+                <span *ngIf="collapsed">Objetivos</span>
+            </div>
+        </a>
+        <a href="#" class="img-custom">
+            <i (click)="toogleCollapse()">
+                <img src="../assets/img/menu/Tool.svg" alt="" class="w-7 cursor-pointer items-center">
+            </i>
+            <div class="flex flex-col">
+                <span *ngIf="collapsed">Herramientas</span>
+            </div>
+        </a>
+        <a href="#"  class="img-custom">
+            <i (click)="toogleCollapse()">
+                <img src="../assets/img/menu/talk2.svg" alt="" class="w-7 cursor-pointer items-center">
+            </i>
+            <div class="flex flex-col">
+                <span *ngIf="collapsed">Servicio al Cliente</span>
+            </div>
+        </a>
+
+    </div>
+</div>
